@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Phạm Tấn Phát</title>
+    <!-- add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/favicon//favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/favicon//ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- link thư viện AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link thư viện anime -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- link style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- load animetion -->
+    <!-- Loader -->
+    <div id="loader" class="loader-container">
+      <div
+        aria-label="Orange and tan hamster running in a metal wheel"
+        role="img"
+        class="wheel-and-hamster"
+      >
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+    <div id="contentc" style="display: none">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" data-aos="animate__tada"
+            >Phạm Tấn Phát</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#profile"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <button class="btn btn-outline-secondary me-2" id="themeToggle">
+                <svg
+                  id="themeIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-moon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C4.145 16 0 11.843 0 7.5 0 3.992 3.146 1.144 6 .278z"
+                  />
+                </svg>
+                Dark Mode
+              </button>
+              <button class="btn btn-primary" id="downloadPdf">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-download"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+                Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid resume-container">
+        <div class="row">
+          <!-- Left Sidebar -->
+          <div class="col-md-4 sidebar">
+            <div class="profile-section">
+              <img
+                id="profile"
+                src="./assets/img/avatar.png"
+                alt="Profile Picture"
+                class="profile-img"
+              />
+              <h1 id="Mypage" class="name">Phạm Tấn Phát</h1>
+              <h2 class="title">fresher developer</h2>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <svg
+                  class="contact-icon email-icon"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_288_319)">
+                    <path
+                      d="M20.7334 4H4.7334C3.6334 4 2.7434 4.9 2.7434 6L2.7334 18C2.7334 19.1 3.6334 20 4.7334 20H20.7334C21.8334 20 22.7334 19.1 22.7334 18V6C22.7334 4.9 21.8334 4 20.7334 4ZM20.7334 8L12.7334 13L4.7334 8V6L12.7334 11L20.7334 6V8Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_288_319">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.733398)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <a href="mailto:phatpt7885@gmail.com">phatpt7885@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="contact-icon phone-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_288_326)">
+                    <path
+                      d="M20.7434 15.38C19.5134 15.38 18.3234 15.18 17.2134 14.82C16.8634 14.7 16.4734 14.79 16.2034 15.06L14.6334 17.03C11.8034 15.68 9.1534 13.13 7.7434 10.2L9.6934 8.54C9.9634 8.26 10.0434 7.87 9.9334 7.52C9.5634 6.41 9.3734 5.22 9.3734 3.99C9.3734 3.45 8.9234 3 8.3834 3H4.9234C4.3834 3 3.7334 3.24 3.7334 3.99C3.7334 13.28 11.4634 21 20.7434 21C21.4534 21 21.7334 20.37 21.7334 19.82V16.37C21.7334 15.83 21.2834 15.38 20.7434 15.38Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_288_326">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.733398)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <a href="tel:0384001761">0384001761</a>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="contact-icon website-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_288_332)">
+                    <path
+                      d="M20.8521 3.88125C18.6865 1.71094 15.799 0.515625 12.7334 0.515625C9.66777 0.515625 6.78027 1.71094 4.61465 3.88125C2.44902 6.05156 1.24902 8.93437 1.24902 12C1.24902 15.0656 2.44434 17.9531 4.61465 20.1188C6.78496 22.2844 9.66777 23.4844 12.7334 23.4844C15.799 23.4844 18.6865 22.2891 20.8521 20.1188C23.0178 17.9484 24.2178 15.0656 24.2178 12C24.2178 8.93437 23.0225 6.04688 20.8521 3.88125ZM23.1771 11.4844H18.724C18.6818 9.7125 18.4334 8.00625 17.9975 6.49219C18.8459 6.05625 19.6381 5.50781 20.3646 4.86094C22.0053 6.61406 23.0506 8.92969 23.1771 11.4844ZM13.249 12.5156H17.6975C17.66 14.1469 17.435 15.7078 17.0459 17.1047C15.8459 16.6219 14.5662 16.3406 13.249 16.2797V12.5156ZM19.624 4.14375C19.024 4.67344 18.3678 5.12344 17.674 5.49844C17.4959 5.00156 17.2943 4.53281 17.0693 4.09219C16.624 3.21094 16.1178 2.48906 15.56 1.93594C17.0834 2.3625 18.4662 3.12656 19.624 4.14375ZM13.249 1.70625C14.3225 1.94531 15.335 2.93437 16.1506 4.54688C16.3709 4.98281 16.5678 5.44687 16.7412 5.93906C15.6396 6.39375 14.4631 6.66094 13.249 6.72187V1.70625ZM17.0506 6.92813C17.435 8.31563 17.6553 9.86719 17.6928 11.4891H13.249V7.75781C14.5709 7.69688 15.8506 7.41094 17.0506 6.92813ZM12.2178 11.4844H7.76934C7.80684 9.8625 8.02715 8.31094 8.41152 6.92344C9.61152 7.41094 10.8959 7.69219 12.2131 7.74844V11.4844H12.2178ZM12.2225 1.70625V6.72187C11.0084 6.66094 9.82715 6.39375 8.73027 5.93906C8.90371 5.44687 9.10059 4.98281 9.3209 4.54688C10.1365 2.93437 11.149 1.94531 12.2225 1.70625ZM9.91152 1.93594C9.35371 2.48906 8.84746 3.21563 8.40215 4.09219C8.18184 4.53281 7.98027 5.00156 7.79746 5.49844C7.10371 5.12344 6.45215 4.67344 5.84746 4.14375C7.00527 3.12656 8.38809 2.3625 9.91152 1.93594ZM5.10684 4.86094C5.8334 5.50781 6.62559 6.05156 7.47402 6.49219C7.03809 8.01094 6.78496 9.7125 6.74746 11.4844H2.29434C2.4209 8.92969 3.46621 6.61406 5.10684 4.86094ZM2.29434 12.5156H6.74746C6.78965 14.3016 7.04277 16.0125 7.4834 17.5359C6.63965 17.9719 5.84746 18.5109 5.12559 19.1578C3.4709 17.4 2.4209 15.0797 2.29434 12.5156ZM5.86621 19.875C6.46621 19.35 7.11777 18.9 7.80684 18.5297C7.98496 19.0125 8.18184 19.4766 8.40215 19.9078C8.84746 20.7891 9.35371 21.5109 9.91152 22.0687C8.39746 21.6422 7.01934 20.8828 5.86621 19.875ZM12.2225 22.2938C11.149 22.0547 10.1365 21.0656 9.3209 19.4531C9.10527 19.0266 8.91309 18.5719 8.73965 18.0891C9.83652 17.6344 11.0131 17.3672 12.2225 17.3109V22.2938ZM8.42559 17.1047C8.03652 15.7078 7.81152 14.1469 7.77402 12.5156H12.2225V16.2797C10.9053 16.3359 9.62559 16.6172 8.42559 17.1047ZM13.2537 22.2938V17.3109C14.4631 17.3719 15.6396 17.6344 16.7365 18.0891C16.5631 18.5719 16.3709 19.0266 16.1553 19.4531C15.3396 21.0656 14.3271 22.0547 13.2537 22.2938ZM15.5646 22.0641C16.1225 21.5109 16.6287 20.7844 17.074 19.9031C17.2943 19.4719 17.4912 19.0078 17.6693 18.525C18.3584 18.8953 19.01 19.3453 19.61 19.8703C18.4568 20.8828 17.0787 21.6422 15.5646 22.0641ZM20.3553 19.1578C19.6334 18.5156 18.8412 17.9719 17.9975 17.5359C18.4381 16.0125 18.6912 14.2969 18.7334 12.5156H23.1865C23.0553 15.0797 22.0053 17.4 20.3553 19.1578Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_288_332">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.733398)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <a href="javascript:location.reload();">www.yoursitename.com</a>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="contact-icon location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_288_338)">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_288_338">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p>Phú Yên</p>
+              </div>
+            </div>
+
+            <div class="info-section industry-knowledge">
+              <h3>Kiến thức ngành</h3>
+              <ul>
+                <li>Thiết kế giao diện website</li>
+                <li>Frontend developer</li>
+                <li>Backend developer</li>
+                <li>Thành thạo PS</li>
+                <li>Biết Blender</li>
+                <li>Thiết kế model 3d</li>
+              </ul>
+            </div>
+
+            <div class="info-section languages">
+              <h3>Ngôn Ngữ</h3>
+              <div class="language-item">
+                <span>Tiếng Việt</span>
+                <div class="language-proficiency">
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                </div>
+              </div>
+              <div class="language-item">
+                <span>Tiếng Anh</span>
+                <div class="language-proficiency">
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                  <div class="dot filled"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-section social">
+              <h3>Social</h3>
+
+              <a
+                class="social-link"
+                target="_blank"
+                href="https://www.linkedin.com/in/ph%E1%BA%A1m-t%E1%BA%A5n-ph%C3%A1t-80047336a/"
+                >linkedin.com/in/PhamTanPhat</a
+              >
+              <br />
+              <a
+                class="social-link"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61573463647418"
+                >fb.com/PhamTanPhat</a
+              ><br />
+              <a
+                class="social-link"
+                target="_blank"
+                href="https://www.instagram.com/phamtanphat261205/"
+                >ins.com/PhamTanPhat</a
+              ><br />
+              <a class="social-link" href="#Mypage">Yoursitename.com</a>
+            </div>
+
+            <div class="info-section hobbies">
+              <h3>Hobbies</h3>
+              <div class="hobbies-icons">
+                <div class="hobby-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="28"
+                    viewBox="0 0 35 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.3477 0C8.00898 0 5.97734 1.95313 1.02539 1.95313C0.459375 1.95313 0 2.39063 0 2.92969V23.4063C5.75723 23.6908 7.79092 21.4844 11.3477 21.4844C13.2542 21.4844 15.0849 22.6374 16.4746 23.8711V2.38542C15.0213 1.10417 13.2118 0 11.3477 0ZM12.373 16.6016H4.16992C3.60391 16.6016 3.14453 16.1641 3.14453 15.625C3.14453 15.0859 3.60391 14.6484 4.16992 14.6484H12.373C12.9391 14.6484 13.3984 15.0859 13.3984 15.625C13.3984 16.1641 12.9391 16.6016 12.373 16.6016ZM12.373 12.6953H4.16992C3.60391 12.6953 3.14453 12.2578 3.14453 11.7188C3.14453 11.1797 3.60391 10.7422 4.16992 10.7422H12.373C12.9391 10.7422 13.3984 11.1797 13.3984 11.7188C13.3984 12.2578 12.9391 12.6953 12.373 12.6953ZM12.373 8.78906H4.16992C3.60391 8.78906 3.14453 8.35156 3.14453 7.8125C3.14453 7.27344 3.60391 6.83594 4.16992 6.83594H12.373C12.9391 6.83594 13.3984 7.27344 13.3984 7.8125C13.3984 8.35156 12.9391 8.78906 12.373 8.78906ZM11.3477 23.4375C8.38496 23.4375 5.9876 25.6517 0 25.3704V26.3672C0 26.9063 0.459375 27.3438 1.02539 27.3438H16.4746V26.7044C15.5333 25.6035 13.2822 23.4375 11.3477 23.4375ZM23.6523 23.4375C21.7103 23.4375 19.4633 25.6029 18.5254 26.7038V27.3438H33.9746C34.5406 27.3438 35 26.9063 35 26.3672V25.3672C28.9934 25.6475 26.6174 23.4375 23.6523 23.4375ZM33.9746 1.95313C29.022 1.95313 26.9924 0 23.6523 0C21.7889 0 19.9801 1.10286 18.5254 2.38542V23.8711C19.9155 22.6373 21.746 21.4844 23.6523 21.4844C27.2193 21.4844 29.2817 23.7064 35 23.4128V2.92969C35 2.39063 34.5406 1.95313 33.9746 1.95313ZM30.8301 16.6016H22.627C22.0609 16.6016 21.6016 16.1641 21.6016 15.625C21.6016 15.0859 22.0609 14.6484 22.627 14.6484H30.8301C31.3961 14.6484 31.8555 15.0859 31.8555 15.625C31.8555 16.1641 31.3961 16.6016 30.8301 16.6016ZM30.8301 12.6953H22.627C22.0609 12.6953 21.6016 12.2578 21.6016 11.7188C21.6016 11.1797 22.0609 10.7422 22.627 10.7422H30.8301C31.3961 10.7422 31.8555 11.1797 31.8555 11.7188C31.8555 12.2578 31.3961 12.6953 30.8301 12.6953ZM30.8301 8.78906H22.627C22.0609 8.78906 21.6016 8.35156 21.6016 7.8125C21.6016 7.27344 22.0609 6.83594 22.627 6.83594H30.8301C31.3961 6.83594 31.8555 7.27344 31.8555 7.8125C31.8555 8.35156 31.3961 8.78906 30.8301 8.78906Z"
+                      fill="#E5E5E5"
+                    />
+                  </svg>
+
+                  <span>Reading</span>
+                </div>
+                <div class="hobby-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="31"
+                    viewBox="0 0 20 31"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.5833 19.4831C18.931 18.7588 17.9392 18.6763 17.1272 19.2559C16.1677 19.9405 14.7637 20.8202 13.6066 21.3931C13.2273 20.2655 13.0631 18.7592 12.7575 17.542L12.7833 10.5806C12.7833 10.5806 17.0255 10.0816 18.2498 9.91617C19.5542 9.80783 19.7539 8.78574 19.4762 8.06807C19.4089 7.89357 17.7046 3.5473 17.4076 2.70739C17.1159 1.88329 16.3302 1.39382 15.3206 1.64647C14.3853 1.88042 14.1039 2.68438 14.3891 3.50943C14.7868 4.66335 15.8459 7.45204 15.8459 7.45204L12.1294 7.89884L6.12052 6.7478C4.59057 5.30096 3.60577 3.68777 3.24844 1.35403C3.11714 0.497338 2.51011 -0.102396 1.4123 0.0145788C0.449555 0.117171 -0.112806 0.920171 0.0190398 1.77639C0.557722 5.29856 2.3379 8.27805 5.0593 10.2594V17.1508C3.1914 21.4056 3.16934 25.7964 5.92302 29.694C6.28142 30.2002 6.89276 30.4778 7.51754 30.4778C7.86088 30.4778 8.20744 30.3929 8.51903 30.2199C9.39782 29.7256 9.66258 28.6915 9.10883 27.9072C7.5832 25.7489 6.87607 23.1295 7.63916 20.081C7.76186 19.5905 8.26018 19.2463 8.82415 19.2645H8.82577C9.35692 19.2813 9.80735 19.614 9.9252 20.0752C10.2605 21.3797 10.4262 22.6506 10.6797 23.444C11.1764 24.9953 12.913 25.27 14.0183 24.7523C16.2656 23.7 17.6691 22.9449 19.2884 21.8394C20.1144 21.2761 20.2328 20.2046 19.5833 19.4831Z"
+                      fill="#E5E5E5"
+                    />
+                    <path
+                      d="M9.66366 6.55675C11.2576 6.55675 12.5497 5.40566 12.5497 3.98571C12.5497 2.56577 11.2576 1.41467 9.66366 1.41467C8.06973 1.41467 6.77759 2.56577 6.77759 3.98571C6.77759 5.40566 8.06973 6.55675 9.66366 6.55675Z"
+                      fill="#E5E5E5"
+                    />
+                  </svg>
+                  <span>Dance</span>
+                </div>
+                <div class="hobby-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="30"
+                    viewBox="0 0 35 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.75037 29.1454L4.02332 27.2361L5.47329 28.4543C5.86021 28.7791 6.48159 28.7915 6.8864 28.4839L21.3885 17.4621L22.149 18.1009C22.549 18.4369 23.1987 18.4371 23.5989 18.1009L26.4989 15.6647C26.5734 15.6021 26.634 15.5324 26.6807 15.4581C28.4527 15.3112 30.1398 14.7372 31.5332 13.8032L32.2993 14.4468C32.6995 14.783 33.3487 14.7832 33.7492 14.4468C34.1495 14.1103 34.1495 13.565 33.7492 13.2288L32.9839 12.5859C35.8745 9.55625 35.666 5.0944 32.299 2.26637C28.9462 -0.549994 23.6342 -0.741326 20.0143 1.69148L19.2488 1.0484C18.8485 0.712165 18.1991 0.712165 17.7988 1.0484C17.3983 1.38485 17.3983 1.93014 17.7988 2.26637L18.5646 2.9099C17.4527 4.08032 16.7694 5.49769 16.5948 6.98618C16.5048 7.0261 16.4217 7.07724 16.3486 7.1387L13.4486 9.57465C13.0481 9.9111 13.0481 10.4564 13.4486 10.7926L14.2089 11.4314L1.08788 23.6132C0.721512 23.9537 0.736732 24.4756 1.12312 24.8002L2.57336 26.0182L0.300407 27.9274C-0.100136 28.2639 -0.100136 28.8092 0.300407 29.1454C0.700683 29.4819 1.34983 29.4819 1.75037 29.1454ZM30.849 3.48456C33.42 5.64416 33.6125 9.01815 31.5225 11.3583L21.4755 2.91887C24.259 1.16481 28.2762 1.32317 30.849 3.48456ZM30.0714 12.5754C28.8161 13.3622 27.2791 13.7866 25.6967 13.7727L18.601 7.81251C18.5844 6.48306 19.0896 5.19197 20.0266 4.13796L30.0714 12.5754ZM17.0738 8.96566L24.3239 15.0557L22.8739 16.2739L15.6236 10.1836L17.0738 8.96566ZM9.27871 24.3426L6.01803 21.6036L15.6607 12.651L19.9366 16.2425L9.27871 24.3426ZM4.64043 22.8824L7.75638 25.4998L6.23379 26.6568L3.26309 24.1614L4.64043 22.8824Z"
+                      fill="#E5E5E5"
+                    />
+                  </svg>
+                  <span>Singing</span>
+                </div>
+                <div class="hobby-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.7906 5.72637C24.7546 3.14121 21.8871 1.27236 18.7164 0.464063C18.4811 0.404063 18.2419 0.546211 18.1821 0.781348C18.1221 1.01654 18.2641 1.25578 18.4993 1.31572C18.6373 1.35088 18.7745 1.38896 18.9113 1.42834C18.9 2.05242 18.8689 2.65418 18.818 3.22307C18.2818 3.54457 16.6453 4.4867 15 5.03947C13.357 4.48734 11.7186 3.54457 11.182 3.22295C11.1313 2.65518 11.1002 2.05459 11.0889 1.43162C12.3557 1.06805 13.6753 0.878906 15 0.878906C15.4546 0.878906 15.9133 0.900762 16.3634 0.943828C16.6053 0.967266 16.8196 0.789844 16.8427 0.548262C16.8659 0.306621 16.6887 0.0920508 16.4471 0.0689062C15.9693 0.0232031 15.4824 0 15 0C12.5923 0 10.1986 0.584238 8.07756 1.68949C6.0252 2.759 4.21975 4.31631 2.85639 6.19295C2.71377 6.38936 2.75736 6.66416 2.95365 6.80678C3.03164 6.86344 3.12205 6.89074 3.21158 6.89074C3.34746 6.89074 3.48146 6.82793 3.56742 6.70957C4.26457 5.74992 5.08529 4.87992 5.99848 4.12307C6.48979 4.4816 6.95273 4.84336 7.37918 5.20266C7.33482 5.82674 7.16736 7.70959 6.67729 9.37207C5.28264 10.4012 3.57059 11.2025 2.99936 11.4577C2.53898 11.193 2.06467 10.8978 1.58414 10.5773C1.81594 9.87598 2.10334 9.19025 2.4484 8.52299C2.55984 8.30742 2.47547 8.04229 2.2599 7.93078C2.04428 7.81934 1.77914 7.90365 1.6677 8.11928C0.576738 10.2294 0 12.6086 0 15C0 19.0066 1.56029 22.7735 4.39336 25.6066C7.22654 28.4397 10.9934 30 15 30C19.0066 30 22.7735 28.4397 25.6066 25.6066C28.4397 22.7735 30 19.0066 30 15C30 11.599 28.8902 8.39227 26.7906 5.72637ZM26.1001 6.27018C27.133 7.58162 27.9108 9.03234 28.4186 10.5755C27.9373 10.8966 27.462 11.1925 27.0006 11.4577C26.4296 11.2029 24.7192 10.4027 23.3227 9.37207C22.8326 7.70953 22.6651 5.82674 22.6208 5.20266C23.047 4.84353 23.5099 4.48189 24.001 4.12342C24.7718 4.76057 25.4774 5.47951 26.1001 6.27018ZM15.4395 5.8176C17.4749 5.10574 19.385 3.90838 19.4692 3.85529C19.5837 3.78305 19.6586 3.66199 19.672 3.52723C19.7294 2.95213 19.7668 2.34352 19.784 1.71158C21.0283 2.16141 22.2062 2.78742 23.2784 3.56396C22.7805 3.9341 22.3123 4.30729 21.8817 4.67754C21.7791 4.76584 21.7228 4.89662 21.7293 5.03191C21.7341 5.1317 21.8496 7.40145 22.4402 9.4841C21.1077 10.5788 19.7527 11.4956 19.2272 11.8419C18.6408 11.4911 17.0811 10.6015 15.4394 10.0274V5.8176H15.4395ZM6.71947 3.56232C7.28027 3.15504 7.8702 2.78865 8.48373 2.46891C9.0426 2.1777 9.62215 1.92639 10.216 1.71334C10.2333 2.34475 10.2707 2.95271 10.3279 3.52717C10.3413 3.66193 10.4162 3.78299 10.5308 3.85529C10.6149 3.90838 12.5251 5.10574 14.5605 5.8176V10.0273C12.9188 10.6014 11.359 11.4911 10.7727 11.8419C10.2472 11.4956 8.89225 10.5787 7.55971 9.48404C8.15033 7.40139 8.2657 5.1317 8.27057 5.03186C8.27707 4.89656 8.22082 4.76578 8.11816 4.67748C7.68703 4.30664 7.21811 3.93293 6.71947 3.56232ZM0.878906 15C0.878906 13.7872 1.02938 12.6043 1.32504 11.4595C1.81219 11.7778 2.2926 12.0701 2.75871 12.3317C2.82527 12.3691 2.89939 12.3879 2.97381 12.3879C3.03146 12.3879 3.0893 12.3766 3.14379 12.3537C3.2352 12.3154 5.29424 11.4448 7.04004 10.1945C8.41553 11.3214 9.77613 12.2393 10.3031 12.5854C10.2434 13.2935 10.113 15.282 10.3043 17.4433C9.78844 17.8247 8.3884 18.8896 7.01824 20.1891C5.27719 18.9472 3.23479 18.0838 3.14379 18.0456C3.01975 17.9936 2.87889 18.0012 2.76111 18.0663C2.73469 18.0809 2.20236 18.3763 1.41768 18.8835C1.06301 17.6363 0.878906 16.3324 0.878906 15ZM10.3283 26.8694C10.3253 26.8969 10.2681 27.4444 10.2326 28.2998C9.08619 27.8897 7.99676 27.3296 6.98736 26.6312C7.67713 26.1049 8.09912 25.7385 8.12033 25.72C8.2217 25.6317 8.27713 25.5018 8.27062 25.3675C8.2698 25.3508 8.25018 24.9514 8.18525 24.3346C8.15982 24.0932 7.94373 23.918 7.70221 23.9435C7.46086 23.9689 7.28578 24.1852 7.31115 24.4266C7.3459 24.7564 7.36723 25.0237 7.37936 25.1958C7.17123 25.3696 6.7749 25.6928 6.25125 26.0858C5.82152 25.7453 5.40838 25.3785 5.01486 24.985C3.51094 23.4811 2.38816 21.6977 1.69477 19.7519C2.28205 19.3662 2.75391 19.0847 3.00006 18.9418C3.57152 19.1969 5.28123 19.9968 6.67729 21.0271C6.79764 21.4354 6.90715 21.886 7.00336 22.369C7.04502 22.578 7.22854 22.7227 7.43391 22.7227C7.46232 22.7227 7.49127 22.7199 7.52022 22.7141C7.75828 22.6667 7.91279 22.4353 7.86539 22.1972C7.77287 21.7327 7.66805 21.2958 7.55326 20.8932C8.86395 19.6417 10.2499 18.5799 10.788 18.1793C11.3858 18.5362 12.9329 19.4155 14.5606 19.9847V24.5816C12.5252 25.2935 10.615 26.4908 10.5309 26.5439C10.417 26.6158 10.3424 26.7357 10.3283 26.8694ZM15 29.1211C13.6624 29.1211 12.3534 28.9355 11.1018 28.578C11.1234 27.9394 11.16 27.4416 11.1826 27.1758C11.7193 26.854 13.3552 25.9124 15 25.3597C16.6423 25.9116 18.2801 26.8539 18.8174 27.176C18.84 27.4416 18.8766 27.9394 18.8983 28.578C17.6466 28.9355 16.3376 29.1211 15 29.1211ZM19.7674 28.2998C19.7319 27.4443 19.6747 26.8969 19.6717 26.8694C19.6576 26.7356 19.5829 26.6157 19.4692 26.544C19.385 26.4909 17.4749 25.2936 15.4395 24.5817V19.9848C17.0671 19.4156 18.6143 18.5362 19.212 18.1794C19.7498 18.5796 21.1348 19.6404 22.4466 20.893C21.8504 22.9817 21.7342 25.2673 21.7294 25.3674C21.7229 25.5017 21.7783 25.6317 21.8797 25.72C21.9009 25.7384 22.3229 26.1049 23.0127 26.6311C22.0033 27.3297 20.9139 27.8898 19.7674 28.2998ZM24.9851 24.9851C24.5916 25.3787 24.1785 25.7454 23.7488 26.0859C23.2252 25.693 22.829 25.3698 22.6208 25.1961C22.6653 24.5713 22.8328 22.6892 23.3227 21.0273C24.717 19.9985 26.4284 19.1974 27.0002 18.942C27.246 19.0847 27.7172 19.3656 28.3053 19.752C27.6118 21.6977 26.4891 23.4812 24.9851 24.9851ZM27.2389 18.0663C27.1212 18.0012 26.9802 17.9937 26.8563 18.0456C26.7653 18.0838 24.7229 18.9472 22.9818 20.1892C21.611 18.889 20.2104 17.8239 19.695 17.4429C19.7315 17.0293 19.7589 16.5988 19.7753 16.1572C19.7842 15.9147 19.595 15.7107 19.3524 15.7018C19.1103 15.6921 18.9059 15.8821 18.897 16.1246C18.8808 16.5598 18.8542 16.9846 18.818 17.3904C18.2818 17.712 16.6453 18.654 15 19.2069C13.357 18.6547 11.7186 17.712 11.182 17.3904C10.9924 15.2682 11.1285 13.2648 11.1827 12.6214C11.7196 12.2995 13.3554 11.358 15 10.8054C16.6424 11.3574 18.2803 12.2998 18.8174 12.6216C18.8381 12.8639 18.8704 13.2986 18.8923 13.8562C18.9018 14.0987 19.105 14.2877 19.3486 14.2781C19.5912 14.2686 19.78 14.0643 19.7705 13.8217C19.7489 13.2718 19.718 12.8432 19.6965 12.5856C20.2233 12.2396 21.5842 11.3215 22.9599 10.1946C24.7058 11.4449 26.7648 12.3155 26.8562 12.3538C26.9108 12.3767 26.9685 12.388 27.0262 12.388C27.1006 12.388 27.1747 12.3691 27.2413 12.3318C27.7082 12.0697 28.1894 11.7768 28.6772 11.4581C28.9709 12.6007 29.121 13.7872 29.121 15.0001C29.121 16.3324 28.9369 17.6363 28.5823 18.8836C27.7976 18.3763 27.2654 18.0809 27.2389 18.0663Z"
+                      fill="#E5E5E5"
+                    />
+                  </svg>
+                  <span>Football</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-md-8 main-content">
+            <div class="section-title">
+              <h2>MY SKILLS</h2>
+            </div>
+
+            <div class="skills-section">
+              <div class="row">
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/figma.svg"
+                    data-aos="animate__rotateIn"
+                    alt="figma"
+                  />
+                  <p>Figma</p>
+                </div>
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/ps.svg"
+                    data-aos="animate__rotateIn"
+                    alt="Adobe Photoshop"
+                  />
+                  <p>Adobe Photoshop</p>
+                </div>
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/Ai.svg"
+                    data-aos="animate__rotateIn"
+                    alt="Adobe illustrator"
+                  />
+                  <p>Adobe illustrator</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/xd.svg"
+                    data-aos="animate__rotateIn"
+                    alt="Adobe Xd"
+                  />
+                  <p>Adobe Xd</p>
+                </div>
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/id.svg"
+                    data-aos="animate__rotateIn"
+                    alt="Adobe indesign"
+                  />
+                  <p>Adobe indesign</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-title" id="skills">
+              <h2>OTHER SKILLS</h2>
+            </div>
+
+            <div class="other-skills">
+              <div class="row">
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/html.svg"
+                    data-aos="animate__rotateIn"
+                    alt="html"
+                  />
+                  <p>HTML 5</p>
+                </div>
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/css.svg"
+                    data-aos="animate__rotateIn"
+                    alt="css"
+                  />
+                  <p>CSS 3</p>
+                </div>
+                <div class="col-4 skill-item">
+                  <img
+                    src="./assets/img/js.svg"
+                    data-aos="animate__rotateIn"
+                    alt="js"
+                  />
+                  <p>Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-title" id="experience">
+              <h2>EXPERIENCE</h2>
+            </div>
+
+            <div class="experience-section">
+              <div class="experience-item">
+                <h3>Trang web đọc truyện online</h3>
+                <p class="position">Full Stack</p>
+                <p class="duration">Tháng 4 2025, HCM</p>
+                <p class="description">
+                  Tôi đang tạo ra một nền tảng đọc truyện chữ online, nơi người
+                  dùng có thể dễ dàng khám phá, đọc và lưu lại những tác phẩm
+                  yêu thích mọi lúc mọi nơi.
+                </p>
+              </div>
+              <div class="experience-item">
+                <h3>Tạo ra Website Portfolio</h3>
+                <p class="position">Full stack</p>
+                <p class="duration">Tháng 6 2025, HCM</p>
+                <p class="description">
+                  Tôi đang tạo ra một Website Portfolio – không chỉ là nơi tôi
+                  giới thiệu về bản thân, mà còn là không gian để thể hiện kỹ
+                  năng, kinh nghiệm và các dự án cá nhân một cách trực quan và
+                  chuyên nghiệp.
+                </p>
+              </div>
+            </div>
+
+            <div class="section-title" id="education">
+              <h2>EDUCATION</h2>
+            </div>
+
+            <div class="education-section">
+              <div class="education-item">
+                <h3>
+                  Sinh viên khóa k23 của Trường đại học giao thông vận tải
+                  TP.HCM
+                </h3>
+                <p class="institution">Cơ sở 3</p>
+                <p class="duration">2023-2027, TP.HCM</p>
+              </div>
+              <div class="education-item">
+                <h3>Học viên của kênh Gà Lại Lập Trình</h3>
+                <p class="institution">online</p>
+                <p class="duration">2023, TP.HCM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- link script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!--link script   -->
+    <script src="./script.js"></script>
+    <!-- link js aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
+      });
+    </script>
+  </body>
+</html>
