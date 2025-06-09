@@ -153,7 +153,11 @@ body {
   left: 0;
   top: 6px;
 }
-
+.contact-link {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .language-item {
   display: flex;
   justify-content: space-between;
@@ -166,6 +170,12 @@ body {
 
 .language-proficiency {
   display: flex;
+}
+.social-link {
+  display: block;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dot {
