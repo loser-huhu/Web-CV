@@ -66,3 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+//
+const path = document.querySelector("path");
+const length = path.getTotalLength();
+console.log(length); // Sử dụng giá trị này cho stroke-dasharray
