@@ -135,6 +135,14 @@ body {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* bóng nhẹ */
+  transition: all 0.3s ease; /* mượt khi hover */
+}
+.info-section:hover {
+  background: rgba(255, 255, 255, 0.45); /* nền sáng hơn chút */
+  transform: translateY(-3px); /* hơi nâng lên */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* bóng đậm hơn */
+  cursor: pointer; /* thay đổi con trỏ */
 }
 
 .info-section h3 {
@@ -529,6 +537,10 @@ body {
   height: 30px;
   left: 3px;
 }
+.svg-spin {
+  transform-origin: center center;
+}
+
 .spin {
   animation: spin3600 8s linear forwards;
   transform-origin: center center;
@@ -651,7 +663,7 @@ body {
 .hero-row {
   /* height: 100vh; */
   padding-top: 50px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .social a {
   text-decoration: none;
@@ -666,6 +678,14 @@ body {
 .social a:hover {
   text-decoration: underline;
   color: #1abcfe;
+}
+.space-tb {
+  height: 30px;
+  background: rgb(0, 102, 255, 0);
+  box-shadow: none;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /* dark mode */
 /* Navbar spacing */
@@ -690,7 +710,8 @@ body.dark-mode .navbar-light .navbar-brand,
 body.dark-mode .navbar-light .navbar-nav .nav-link {
   color: #ffffff !important;
 }
-body.dark-mode .hero-row {
+body.dark-mode .hero-row,
+body.dark-mode .bg-ft-svg {
   background-color: #1a1a1a;
 }
 .nav-link {
@@ -1221,7 +1242,10 @@ body.dark-mode .spoke {
   left: 0;
   top: -25%;
 }
-
+.bg-ft-svg {
+  background: #fff;
+  padding-left: 0px;
+}
 .bg-yellow-1 {
   background: #fdc435;
   z-index: 1;

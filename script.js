@@ -70,3 +70,23 @@ document.addEventListener("DOMContentLoaded", function () {
 const path = document.querySelector("path");
 const length = path.getTotalLength();
 console.log(length); // Sử dụng giá trị này cho stroke-dasharray
+// vòng xe lăn bánh
+
+const targets = document.querySelectorAll(".skill-icon");
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const svg = entry.target.querySelector(".svg-spin");
+        if (svg) svg.classList.add("spin");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+targets.forEach((target) => observer.observe(target));
