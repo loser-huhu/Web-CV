@@ -9,6 +9,22 @@ body {
   min-height: 100vh;
   padding: 20px;
 }
+:root {
+  --primary-color: #6c63ff;
+  --primary-dark: #564fd8;
+  --secondary-color: #f9a826;
+  --dark-color: #2f2e41;
+  --light-color: #f8f9fa;
+  --gray-color: #6c757d;
+  --light-gray: #e9ecef;
+  --white: #ffffff;
+  --black: #000000;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  --transition: all 0.7s ease;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 .bg-nav {
   background-color: rgba(173, 216, 230);
   backdrop-filter: blur(8px);
@@ -129,6 +145,53 @@ body {
   top: 2px;
   left: 5px;
 }
+.certifications {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.certifications li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Icon đầu dòng */
+.certifications li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-size: 19px;
+}
+/* tính cách cá nhân  */
+.personal p {
+  font-size: 20px;
+}
+.personal-traits {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.personal-traits li {
+  margin-bottom: 6px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 20px;
+  color: white;
+}
+
+.personal-traits li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #f39c12;
+  font-size: 12px;
+}
 
 .info-section {
   background: rgba(196, 196, 196, 0.35);
@@ -200,6 +263,17 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.social-link-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(31, 5, 231, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  transition: var(--transition);
+}
 
 .dot {
   width: 8px;
@@ -226,20 +300,224 @@ body {
   justify-content: space-between;
 }
 
+/* Hobbies section */
+.hobbies-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .hobby-icon {
   text-align: center;
   margin-bottom: 15px;
   width: 23%;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
+
 .hobby-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) translateY(-5px);
+  filter: drop-shadow(0 0 8px rgba(229, 229, 229, 0.5));
 }
+
 .hobby-icon span {
   font-size: 10px;
   font-weight: 700;
   color: #e5e5e5;
   display: block;
   margin-top: 5px;
+  transition: color 0.4s ease;
+}
+
+.hobby-icon:hover span {
+  color: #1abcfe;
+}
+
+.hobby-icon svg {
+  transition: transform 0.4s ease;
+}
+
+.hobby-icon:hover svg {
+  transform: rotate(10deg);
+}
+.hobby-icon:hover .icon {
+  background: #1abcfe;
+}
+
+/* weather */
+/* From Uiverse.io by KSAplay */
+.card-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180px;
+  width: 100%;
+  border-radius: 25px;
+  background: lightgrey;
+  overflow: hidden;
+  transition: 100ms ease;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 4px;
+}
+
+/* ---------- Info section-weather ---------- */
+
+.info-section-weather {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75%;
+  color: white;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  z-index: 1;
+  padding-left: 18px;
+}
+
+button {
+  display: block;
+  border: none;
+  background: transparent;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.weather div {
+  display: flex;
+  align-items: center;
+}
+
+.weather div:nth-child(1) {
+  width: 40%;
+  height: auto;
+}
+
+.temperature {
+  font-size: 34pt;
+  font-weight: 500;
+  line-height: 8%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  padding-right: 18px;
+  z-index: 1;
+}
+
+.right-side > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hour {
+  font-size: 19pt;
+  line-height: 1em;
+}
+
+.date {
+  font-size: 15px;
+}
+
+/* ---------- Background ---------- */
+.background-design {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ec7263;
+  overflow: hidden;
+}
+
+.circle {
+  background-color: #efc745;
+}
+
+.circle:nth-child(1) {
+  position: absolute;
+  top: -80%;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.circle:nth-child(2) {
+  position: absolute;
+  top: -70%;
+  right: -30%;
+  width: 210px;
+  height: 210px;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.circle:nth-child(3) {
+  position: absolute;
+  top: -35%;
+  right: -8%;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+/* ---------- Days section ---------- */
+.days-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 25%;
+  background-color: #974859;
+  gap: 2px;
+  box-shadow: inset 0px 2px 5px #974859;
+}
+
+.days-section button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #a75265;
+  box-shadow: inset 0px 2px 5px #974859;
+  cursor: pointer;
+  transition: 100ms ease;
+  gap: 5px;
+}
+
+.days-section button:hover {
+  scale: 0.9;
+  border-radius: 10px;
+}
+
+.days-section .day {
+  font-size: 10pt;
+  font-weight: 500;
+  color: white;
+  opacity: 0.7;
+}
+
+.icon-weather-day {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 100%;
 }
 
 .icon {
@@ -247,6 +525,7 @@ body {
   height: 30px;
   background: #e5e5e5;
   margin: 0 auto;
+  transition: background 0.4s ease;
 }
 
 /* Main Content Styles */
@@ -260,7 +539,8 @@ body {
   margin-bottom: 30px;
 }
 
-.section-title h2 {
+.section-title h2,
+.section-title-weather {
   display: inline-block;
   background: #545454;
   color: white;
@@ -569,7 +849,7 @@ body {
 .experience-item h3,
 .education-item h3 {
   color: #343434;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 5px;
   font-family: "Calibri", sans-serif;
@@ -698,7 +978,9 @@ body.dark-mode {
   background-color: #1a1a1a;
   color: #ffffff;
 }
-
+body.dark-mode .footer-modern {
+  background: linear-gradient(90deg, #1a044d, #1a2a5e);
+}
 body.dark-mode .navbar {
   background-color: #2c2c2c !important;
 }
@@ -716,13 +998,15 @@ body.dark-mode .bg-ft-svg {
 }
 .nav-link {
   font-size: 22px;
+  font-weight: 800;
+  transition: color 0.3s ease;
 }
 .nav-link:active {
   color: #0d6efd !important;
 }
 .nav-link:hover {
   /* font-size: 20px; */
-  text-shadow: 1px 0 0 currentColor;
+  text-shadow: 1px 0 0 #005577;
 }
 body.dark-mode .sidebar {
   background-color: #2c2c2c;
@@ -1286,8 +1570,25 @@ body.dark-mode .spoke {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 32px;
-}
+  /*  */
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #06b6d4);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
+  animation: gradientText 8s ease infinite;
+}
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .description-text {
   color: #828282;
   font-size: 24px;
@@ -1422,4 +1723,180 @@ body.dark-mode .spoke {
     font-size: 0.9rem;
   }
 }
-/* haizz */
+/* them css */
+
+.portfolio-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 0 0 auto; */
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem; */
+
+  /* 
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: 0; */
+
+  justify-content: center;
+}
+
+.portfolio-item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  max-width: 500px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(108, 99, 255, 0.9); */
+  background: linear-gradient(
+    to bottom right,
+    rgba(108, 99, 255, 0.8),
+    rgba(0, 212, 255, 0.6)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.portfolio-info {
+  text-align: center;
+  padding: 2rem;
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+
+.portfolio-info h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-info p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-link {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-img img {
+  transform: scale(1.1);
+}
+
+.portfolio-more {
+  text-align: center;
+  margin-top: 5rem;
+}
+/* ghi đề css cho side bar */
+/* css */
+
+.footer-modern {
+  margin-top: 30px;
+  background: linear-gradient(90deg, #3a0ca3, #4361ee);
+}
+
+.footer-modern a.footer-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-modern a.footer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer-modern .footer-icon {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  transition: color 0.3s ease;
+}
+
+.footer-modern .footer-icon:hover {
+  color: #ffffff;
+}
+
+.footer-modern input.form-control {
+  border: none;
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.footer-modern .btn-primary {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  border-radius: 0 0.375rem 0.375rem 0;
+  transition: 0.3s;
+}
+
+.footer-modern .btn-primary:hover {
+  background-color: #e0a800;
+}
+/* back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #ffc107;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: #e0a800;
+  color: #fff;
+}

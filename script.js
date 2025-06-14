@@ -90,3 +90,44 @@ const observer = new IntersectionObserver(
 );
 
 targets.forEach((target) => observer.observe(target));
+// ngày và giờ
+
+function updateTimeAndWeather() {
+  const now = new Date();
+
+  // Lấy giờ:phút, có 0 phía trước nếu cần
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+
+  // Thứ trong tuần
+  const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  const dayName = days[now.getDay()];
+
+  // Ngày và tháng
+  const day = now.getDate().toString().padStart(2, "0");
+  const month = (now.getMonth() + 1).toString().padStart(2, "0");
+
+  // Cập nhật HTML
+  document.getElementById("hour").textContent = `${hours}:${minutes}`;
+  document.getElementById("date").textContent = `${dayName} ${month}-${day}`;
+
+  // Giả lập nhiệt độ ngẫu nhiên từ 26–40°C (bạn có thể thay bằng API thật)
+  const temperature = Math.floor(Math.random() * 15 + 26);
+  document.getElementById("temperature").textContent = `${temperature}°`;
+}
+
+// Cập nhật lần đầu
+updateTimeAndWeather();
+
+// Cập nhật mỗi 30 giây
+setInterval(updateTimeAndWeather, 30000);
+// Back to top
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
+});

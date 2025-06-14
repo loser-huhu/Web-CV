@@ -97,6 +97,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- link bootstrap icon -->
+     <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- link thư viện AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- link thư viện anime -->
@@ -106,6 +109,8 @@
     />
     <!-- link style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- link font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
     <!-- load animetion -->
@@ -226,9 +231,10 @@
 </div>
 
 <!-- Content Section -->
+ <!--  -->
 <div class="col-lg-6 content-section p-3 p-md-5 d-flex align-items-center">
   <div class="content-wrapper">
-    <h2 class="job-title">Fresher developer</h2>
+    <h2 class="job-title" id="contact">Fresher developer</h2>
     
     <div class="content-group">
       <h1 class="name-heading">Xin chào, Tôi tên là Phạm Tấn Phát</h1>
@@ -254,6 +260,8 @@
         <div class="row">
           <!-- Left Sidebar -->
           <div class="col-md-4 sidebar">
+            
+
             <div class="profile-section">
               <img
                
@@ -448,29 +456,54 @@
             <div class="info-section social">
               <h3>Social</h3>
 
-              <a
-                class="social-link"
+         <div class="d-flex gap-3 align-items-center">
+           <a
                 target="_blank"
                 href="https://www.linkedin.com/in/ph%E1%BA%A1m-t%E1%BA%A5n-ph%C3%A1t-80047336a/"
-                >linkedin.com/in/PhamTanPhat</a
-              >
+                class="social-link-icon"
+                ><i class="fa-brands fa-linkedin fa-lg" style="color: #74C0FC;"></i></a>
+                <a
+                  class="social-link"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ph%E1%BA%A1m-t%E1%BA%A5n-ph%C3%A1t-80047336a/"
+                  >linkedin.com/in/PhamTanPhat</a>
+                  
+                  
+         </div>
               <br />
-              <a
-                class="social-link"
+         <div class="d-flex gap-3 align-items-center">
+           <a
                 target="_blank"
-                href="https://www.facebook.com/profile.php?id=61573463647418"
-                >fb.com/PhamTanPhat</a
-              ><br />
-              <a
-                class="social-link"
+                href="https://www.facebook.com/profile.php?id=61573463647418/"
+                class="social-link-icon"
+                ><i class="fa-brands fa-facebook fa-lg" style="color: #74C0FC;"></i></a>
+                <a
+                  class="social-link"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=61573463647418/"
+                  >fb.com/PhamTanPhat</a>
+                  
+                  
+         </div>
+         <br />
+             <div class="d-flex gap-3 align-items-center">
+           <a
                 target="_blank"
                 href="https://www.instagram.com/phamtanphat261205/"
-                >ins.com/PhamTanPhat</a
-              ><br />
-              <a class="social-link" href="#Mypage">PhamTanPhatPortfolio.com</a>
+                class="social-link-icon"
+                ><i class="fa-brands fa-instagram fa-lg" style="color: #74c1fc ;"></i></a>
+                <a
+                  class="social-link"
+                  target="_blank"
+                  href="https://www.instagram.com/phamtanphat261205/"
+                  >ins.com/PhamTanPhat</a>
+                  
+                  
+         </div><br />
+              
             </div>
 
-            <div class="info-section hobbies">
+            <div id="short-skills" class="info-section hobbies">
               <h3>Hobbies</h3>
               <div class="hobbies-icons">
                 <div class="hobby-icon">
@@ -540,14 +573,196 @@
                 </div>
               </div>
             </div>
-          </div>
+            <!-- kỹ năng mềm -->
+            
+            <div class="info-section industry-knowledge">
+              <h3 > Kỹ năng mềm </h3>
+              <ul>
+                <li>
+                  Giao tiếp hiệu quả
+                </li>
+                <li>Làm việc nhóm</li>
+                <li>Tư duy phản biện</li>
+
+                <li>Blender (mô hình hóa & dựng hình 3D)</li>
+              </ul>
+            </div>
+
+            <!-- chứng chỉ và khóa học  -->
+             <div class="info-section certerfi">
+  <h3>🎓 Chứng chỉ – Khóa học</h3>
+  <ul class="certifications">
+    <li>HTML/CSS cơ bản – F8</li>
+    <li>Lập trình Python – Udemy</li>
+    <li>UI/UX Design – Coursera</li>
+    <li>MOS PowerPoint 2019 – Microsoft</li>
+  </ul>
+</div>
+<!-- tính cách cá nhân  -->
+ <div class="info-section personal">
+  <h3>Tính cách cá nhân</h3>
+  <p>Một vài nét tích cực giúp bạn được đánh giá cao:</p>
+  <ul class="personal-traits">
+    <li>Siêng năng, kiên trì</li>
+    <li>Tư duy cầu tiến</li>
+    <li>Sẵn sàng học hỏi</li>
+    <li>Tôn trọng deadline</li>
+  </ul>
+</div>
+
+            <!-- From Uiverse.io by KSAplay -->
+             <div class="card-weather">
+  <section class="info-section-weather">
+    <div class="background-design">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="left-side">
+      <div class="weather">
+        <div>
+          <svg stroke="#ffffff" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+            <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M512 704a192 192 0 1 0 0-384 192 192 0 0 0 0 384zm0 64a256 256 0 1 1 0-512 256 256 0 0 1 0 512zm0-704a32 32 0 0 1 32 32v64a32 32 0 0 1-64 0V96a32 32 0 0 1 32-32zm0 768a32 32 0 0 1 32 32v64a32 32 0 1 1-64 0v-64a32 32 0 0 1 32-32zM195.2 195.2a32 32 0 0 1 45.248 0l45.248 45.248a32 32 0 1 1-45.248 45.248L195.2 240.448a32 32 0 0 1 0-45.248zm543.104 543.104a32 32 0 0 1 45.248 0l45.248 45.248a32 32 0 0 1-45.248 45.248l-45.248-45.248a32 32 0 0 1 0-45.248zM64 512a32 32 0 0 1 32-32h64a32 32 0 0 1 0 64H96a32 32 0 0 1-32-32zm768 0a32 32 0 0 1 32-32h64a32 32 0 1 1 0 64h-64a32 32 0 0 1-32-32zM195.2 828.8a32 32 0 0 1 0-45.248l45.248-45.248a32 32 0 0 1 45.248 45.248L240.448 828.8a32 32 0 0 1-45.248 0zm543.104-543.104a32 32 0 0 1 0-45.248l45.248-45.248a32 32 0 0 1 45.248 45.248l-45.248 45.248a32 32 0 0 1-45.248 0z"
+                fill="#ffffff"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div>Sunny</div>
+      </div>
+      <div class="temperature" id="temperature">36°</div>
+      <div class="range">42°/28°</div>
+    </div>
+    <div class="right-side">
+      <div>
+        <div class="hour" id="hour">23:56</div>
+        <div class="date" id="date">MON 08-23</div>
+      </div>
+      <div class="city">HCM city</div>
+    </div>
+  </section>
+
+  <section class="days-section">
+    <button>
+      <span class="day">TUE</span>
+      <span class="icon-weather-day">
+        <svg stroke="#ffffff" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+          <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+          <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M512 704a192 192 0 1 0 0-384 192 192 0 0 0 0 384zm0 64a256 256 0 1 1 0-512 256 256 0 0 1 0 512zm0-704a32 32 0 0 1 32 32v64a32 32 0 0 1-64 0V96a32 32 0 0 1 32-32zm0 768a32 32 0 0 1 32 32v64a32 32 0 1 1-64 0v-64a32 32 0 0 1 32-32zM195.2 195.2a32 32 0 0 1 45.248 0l45.248 45.248a32 32 0 1 1-45.248 45.248L195.2 240.448a32 32 0 0 1 0-45.248zm543.104 543.104a32 32 0 0 1 45.248 0l45.248 45.248a32 32 0 0 1-45.248 45.248l-45.248-45.248a32 32 0 0 1 0-45.248zM64 512a32 32 0 0 1 32-32h64a32 32 0 0 1 0 64H96a32 32 0 0 1-32-32zm768 0a32 32 0 0 1 32-32h64a32 32 0 1 1 0 64h-64a32 32 0 0 1-32-32zM195.2 828.8a32 32 0 0 1 0-45.248l45.248-45.248a32 32 0 0 1 45.248 45.248L240.448 828.8a32 32 0 0 1-45.248 0zm543.104-543.104a32 32 0 0 1 0-45.248l45.248-45.248a32 32 0 0 1 45.248 45.248l-45.248 45.248a32 32 0 0 1-45.248 0z"
+              fill="#ffffff"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+      <button>
+      <span class="day">WED</span>
+      <span class="icon-weather-day">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#ffffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M16 18.5L15 21M8 18.5L7 21M12 18.5L11 21M7 15C4.23858 15 2 12.7614 2 10C2 7.23858 4.23858 5 7 5C7.03315 5 7.06622 5.00032 7.09922 5.00097C8.0094 3.2196 9.86227 2 12 2C14.5192 2 16.6429 3.69375 17.2943 6.00462C17.3625 6.00155 17.4311 6 17.5 6C19.9853 6 22 8.01472 22 10.5C22 12.9853 19.9853 15 17.5 15C13.7434 15 11.2352 15 7 15Z"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+    <button>
+      <span class="day">THU</span>
+      <span class="icon-weather-day">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#ffffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M16 18.5L15 21M8 18.5L7 21M12 18.5L11 21M7 15C4.23858 15 2 12.7614 2 10C2 7.23858 4.23858 5 7 5C7.03315 5 7.06622 5.00032 7.09922 5.00097C8.0094 3.2196 9.86227 2 12 2C14.5192 2 16.6429 3.69375 17.2943 6.00462C17.3625 6.00155 17.4311 6 17.5 6C19.9853 6 22 8.01472 22 10.5C22 12.9853 19.9853 15 17.5 15C13.7434 15 11.2352 15 7 15Z"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+    <button>
+      <span class="day">FRI</span>
+      <span class="icon-weather-day">
+        <svg
+          stroke="#ffffff"
+          fill="#ffffff"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1024 1024"
+        >
+          <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            id="SVGRepo_tracerCarrier"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M512 704a192 192 0 1 0 0-384 192 192 0 0 0 0 384zm0 64a256 256 0 1 1 0-512 256 256 0 0 1 0 512zm0-704a32 32 0 0 1 32 32v64a32 32 0 0 1-64 0V96a32 32 0 0 1 32-32zm0 768a32 32 0 0 1 32 32v64a32 32 0 1 1-64 0v-64a32 32 0 0 1 32-32zM195.2 195.2a32 32 0 0 1 45.248 0l45.248 45.248a32 32 0 1 1-45.248 45.248L195.2 240.448a32 32 0 0 1 0-45.248zm543.104 543.104a32 32 0 0 1 45.248 0l45.248 45.248a32 32 0 0 1-45.248 45.248l-45.248-45.248a32 32 0 0 1 0-45.248zM64 512a32 32 0 0 1 32-32h64a32 32 0 0 1 0 64H96a32 32 0 0 1-32-32zm768 0a32 32 0 0 1 32-32h64a32 32 0 1 1 0 64h-64a32 32 0 0 1-32-32zM195.2 828.8a32 32 0 0 1 0-45.248l45.248-45.248a32 32 0 0 1 45.248 45.248L240.448 828.8a32 32 0 0 1-45.248 0zm543.104-543.104a32 32 0 0 1 0-45.248l45.248-45.248a32 32 0 0 1 45.248 45.248l-45.248 45.248a32 32 0 0 1-45.248 0z"
+              fill="#ffffff"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+  </section>
+</div>
+
+    <!-- Các button còn lại không sai cú pháp, giữ nguyên và format lại rõ ràng -->
+    <!-- WED, THU, FRI tương tự, không cần chỉnh sửa nếu đã đúng như trên -->
+    
+  </section>
+</div>
+
+            
+            <!--  -->
+          
 
           <!-- Right Content -->
+           
           <div class="col-md-8 main-content" id="profile">
+
+
+ 
             <div class="section-title">
               <h2>MAIN SKILLS</h2>
             </div>
- <div class="other-skills">
+           <div class="other-skills">
               <div class="row">
                 <div class="col-4 skill-item">
                   <div class="skill-icon html-icon">
@@ -958,14 +1173,35 @@
               </div>
             </div>
             <div class="section-title" id="experience">
-              <h2>Project</h2>
+              <h2 id="project">Project</h2>
             </div>
 
             <div class="experience-section">
               <div class="experience-item">
-                <h3>Tạo ra Website đọc truyện online</h3>
-                <p class="position">Full Stack</p>
-                <p class="duration">Tháng 4 2025, HCM</p>
+                <h3 class="d-flex justify-content-center mb-3">Tạo ra Website đọc truyện online</h3>
+                <!--  -->
+            <div class="portfolio-container">
+            <div class="portfolio-item" data-category="web">        
+            <div class="portfolio-img">
+              <img src="./assets/img/anhtruyen.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3> Full stack</h3>
+                  <p>Our Web</p>
+                  <a
+                    target="_blank"
+                    href="https://loser-huhu.github.io/webtruyenlo/"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+                <!--  -->
+                <p class="position mt-3 d-flex justify-content-center">Full Stack</p>
+                <p class="duration d-flex justify-content-center">Tháng 4 2025, HCM</p>
                 <p class="description">
                   Tôi đang tạo ra một nền tảng đọc truyện chữ online, nơi người
                   dùng có thể dễ dàng khám phá, đọc và lưu lại những tác phẩm
@@ -974,9 +1210,30 @@
                 </p>
               </div>
               <div class="experience-item">
-                <h3>Tạo ra Website Portfolio</h3>
-                <p class="position">Full stack</p>
-                <p class="duration">Tháng 6 2025, HCM</p>
+                <h3 class="d-flex justify-content-center mb-3" >Tạo ra Website Portfolio</h3>
+                <!--  -->
+                 <div class="portfolio-container">
+            <div class="portfolio-item" data-category="web">        
+            <div class="portfolio-img">
+              <img src="./assets/img/anhpofotilio.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3> Full stack</h3>
+                  <p>My Web</p>
+                  <a
+                    target="_blank"
+                    href="https://loser-huhu.github.io/Web-CV/"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+                <!--  -->
+                <p class="position  mt-3 d-flex justify-content-center">Full stack</p>
+                <p class="duration  d-flex justify-content-center">Tháng 6 2025, HCM</p>
                 <p class="description">
                   Tôi đang tạo ra một Website Portfolio – không chỉ là nơi tôi
                   giới thiệu về bản thân, mà còn là không gian để thể hiện kỹ
@@ -992,29 +1249,125 @@
 
             <div class="education-section">
               <div class="education-item">
-                <h3>
+                <h3 class="d-flex justify-content-center mb-3 ">
                   Sinh viên khóa k23 của Trường đại học giao thông vận tải
                   TP.HCM
                 </h3>
-                <p class="institution">Cơ sở 3</p>
-                <p class="duration">2023-2027, TP.HCM</p>
+                 <!--  -->
+                 <div class="portfolio-container">
+            <div class="portfolio-item" data-category="web">        
+            <div class="portfolio-img">
+              <img src="./assets/img/uth.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3> My school</h3>
+                  <p>School's Web</p>
+                  <a
+                    target="_blank"
+                    href="https://giaothongvantaitphcm.edu.vn/"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+                <!--  -->
+                <p class="institution mt-3 d-flex justify-content-center">Cơ sở 3</p>
+                <p class="duration d-flex justify-content-center">2023-2027, TP.HCM</p>
               </div>
               <div class="education-item">
-                <h3>Học viên của kênh Gà Lại Lập Trình</h3>
-                <p class="institution">online</p>
-                <p class="duration">2023, TP.HCM</p>
+                <h3 class="d-flex justify-content-center mb-3 ">Học viên của kênh Gà Lại Lập Trình</h3>
+                 <!--  -->
+                 <div class="portfolio-container">
+            <div class="portfolio-item" data-category="web">        
+            <div class="portfolio-img">
+              <img src="./assets/img/tuhoc.cc.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3> My leaning page</h3>
+                  <p>Course web</p>
+                  <a
+                    target="_blank"
+                    href="https://tuhoc.cc/#!"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+                <!--  -->
+                <p class="institution mt-3 d-flex justify-content-center ">Online</p>
+                <p class="duration d-flex justify-content-center">2023, TP.HCM</p>
               </div>
             </div>
             
           </div>
-          <div class="bg-ft-svg">
+          </div>
+          <!-- <div class="bg-ft-svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="345" viewBox="0 0 1440 345" fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 258.829L60 230.105C120 201.381 240 143.934 360 151.115C480 158.295 600 230.105 720 230.105C840 230.105 960 158.295 1080 108.029C1200 57.7623 1320 29.0385 1380 14.6766L1440 0.314758V345H1380C1320 345 1200 345 1080 345C960 345 840 345 720 345C600 345 480 345 360 345C240 345 120 345 60 345H0V258.829Z" fill="#FDC435"/>
   </svg>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
+    <!-- ft -->
+     <footer class="footer-modern text-white pt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Thông tin cá nhân -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Phạm Tấn Phát</h5>
+        <p>Fresher Developer đam mê công nghệ, đang tìm kiếm cơ hội phát triển trong môi trường chuyên nghiệp.</p>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-envelope me-2"></i>phatpt7885@gmail.com</li>
+          <li><i class="bi bi-telephone me-2"></i>0384 001 761</li>
+          <li><i class="bi bi-geo-alt me-2"></i>Phú Yên, Việt Nam</li>
+        </ul>
+      </div>
+
+      <!-- Điều hướng -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Liên kết nhanh</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="footer-link">Trang chủ</a></li>
+          <li><a href="#project" class="footer-link">Dự án</a></li>
+          <li><a href="#short-skills" class="footer-link">Kỹ năng</a></li>
+          <li><a href="#contact" class="footer-link">Liên hệ</a></li>
+        </ul>
+        <div class="d-flex gap-3 mt-3">
+          <a target="_blank" href="https://www.linkedin.com/in/ph%E1%BA%A1m-t%E1%BA%A5n-ph%C3%A1t-80047336a/" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+          <a target="_blank" href="https://www.facebook.com/tanphat.pham.399488/?id=61573463647418%2F" class="footer-icon"><i class="bi bi-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fphamtanphat261205%2F%3F__coig_ufac%3D1#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Form đăng ký -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Nhận thông tin mới</h5>
+        <p class="small">Đăng ký email để nhận thông tin dự án và bài viết mới nhất từ mình.</p>
+        <form>
+          <div class="input-group mb-2">
+            <input type="email" class="form-control" placeholder="Nhập email của bạn" required>
+            <button class="btn btn-primary" type="submit">Gửi</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr class="border-light my-4">
+
+    <p class="text-center small mb-0">&copy; 2025 Phạm Tấn Phát. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center" title="Lên đầu trang">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
     <!-- link script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -1029,5 +1382,6 @@
         animatedClassName: "animate__animated",
       });
     </script>
+    
   </body>
 </html>
